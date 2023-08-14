@@ -2,7 +2,7 @@ let modInfo = {
 	name: "The Manufactor-Tree",
 	id: "Factory_Mod",
 	author: "nobody1231",
-	pointsName: "coal",
+	pointsName: "MW",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
@@ -43,6 +43,8 @@ function getPointGen() {
 		return new Decimal(0)
 
 	let gain = new Decimal(1)
+	if(hasUpgrade('p',11)) gain = gain.times(2)
+	if (hasUpgrade('p', 12)) gain = gain.times(upgradeEffect('p', 12))
 	return gain
 }
 
