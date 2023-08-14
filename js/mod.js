@@ -2,7 +2,7 @@ let modInfo = {
 	name: "The Manufactor-Tree",
 	id: "Factory_Mod",
 	author: "nobody1231",
-	pointsName: "points",
+	pointsName: "coal",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
